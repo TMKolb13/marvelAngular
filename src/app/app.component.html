@@ -1,5 +1,5 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<app-search (searchParam)="searchAPI($event)"></app-search>
+<app-search (searchParam)="searchAPI($event)" (blankInput)="getDataFromService()"></app-search>
 
 <div *ngFor="let character of characterData">
   <p>{{character.name}}</p>
